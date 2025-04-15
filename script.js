@@ -1,8 +1,8 @@
 window.onload = function () {
   const canvas = document.getElementById("gameCanvas");
   const ctx = canvas.getContext("2d");
-  canvas.width = window.innerWidth;
-  canvas.height = window.innerHeight;
+  canvas.width = canvas.clientWidth;
+  canvas.height = canvas.clientHeight;
 
   let lungX = canvas.width / 2 - 40;
   let lungY = canvas.height - 100;

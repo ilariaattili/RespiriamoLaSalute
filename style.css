@@ -1,3 +1,4 @@
+
 body {
   margin: 0;
   background: #e0f7fa;
@@ -7,9 +8,17 @@ body {
   height: 100vh;
 }
 canvas {
-  width: 100vw;
-  height: 100vh;
-  display: block;
   border: 3px solid #00796b;
   background: white;
+  max-width: 100vw;
+  max-height: 100vh;
+  width: 800px;
+  height: 600px;
+  display: block;
+}
+@media (max-width: 800px) {
+  canvas {
+    width: 100vw;
+    height: 100vh;
+  }
 }
